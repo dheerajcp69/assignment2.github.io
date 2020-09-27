@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script>
+        function insert_Row(){
+            var x=document.getElementById('bio_data').insertRow(-1);
+            var y = x.insertCell(0);
+            var z = x.insertCell(1);
+            var a = x.insertCell(2);
+            var b = x.insertCell(3);
+            var c = x.insertCell(4);
+            y.innerHTML="";
+            z.innerHTML="";
+            a.innerHTML="";
+            b.innerHTML="";
+            c.innerHTML="";
+        }
+    </script>
+    <style>
+        .table-bordered{
+            border-color: rgb(0, 0, 0);
+            border: 2px;
+        }
+        h2{
+                font-style: oblique;
+                text-align: center;
+                padding: 50px;
+                padding-bottom: 0px;
+                color: chartreuse;
+        }
+        
+        h4{
+            text-transform: capitalize;
+            text-align: center;
+        }
+        p{
+            text-transform: capitalize;
+            text-align: center;
+            color: rgb(214, 0, 0);
+        }
+        .game{
+            background-color:#ddd;
+            padding: 10px;
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 25px;
+            margin-top: 0px;
+            width: 80%; 
+            text-align: center;
+        }
+        th, td {
+            padding: 15px;
+        }
+        .social-icons{
+            position: absolute;
+            float: left;
+        }
+
+        .social-icons img{
+            margin: 10px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: .2s;
+            border-radius: 50px;
+        }
+
+        .social-icons img:hover{
+            box-shadow: 0px 0px 10px 4px #E12FE3;
+            border-radius: 50px;
+        }
+        
+    </style>
+    <title>Insert row in a table</title>
+    </head>
+    <body background="https://github.com/dheerajcp69/images/blob/master/unnamed.jpg?raw=true" style="z-index: -1;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img src="https://github.com//dheerajcp69/images/blob/master/7258964.png?raw=true" class="img-fluid">
+                </div><br><br>
+                <div class="col-8">
+                    <h2>Genix Technogical Solutions</h2>
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+                        <a class="navbar-brand active" style="color: rgb(30, 230, 4);" href="#home">GENIX</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item ">
+                                <a class="nav-link" data-toggle="tab" href="#home">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link"data-toggle="tab" href="#c_us">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"data-toggle="tab" href="#par">Members</a>
+                            </li>                          
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                            <button class="btn btn-secondary btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tab-content">
+                        <div id="home"class="tab-pane fade in active">
+                            <img src="https://github.com/dheerajcp69/images/blob/master/download%20(1).jpg?raw=true" class="rounded mx-auto d-block">                    
+                            <p>we are new established company dealing all the technical activities here in the united states. we have our other branch in chittor in andhra pradesh, INDIA.</p>
+                        </div>
+                        <div id="c_us"class="game tab-pane fade">
+                        <h4>Address</h4>
+                        <p class="h5">GENIX Technogical Solutions(USA)</p>
+                        <P>14011 Alex Landing Dr.Humble Texas USA</P>
+                        <P>Zip Code: 77396</P>
+                        <br>
+                        <br>
+                        <p class="h5">GENIX Technogical Solutions(INDIA)</p>
+                        <P>#20-91, Naidu Buildings, Mittoor, Chittoor, AP, INDIA</P>
+                        <p>Zip Code:517001</p>
+                        <H4>
+                            Phone(USA): +1 965 965 6695
+                            Phone(INDIA):+918572 222799
+                        </H4>
+                        </div>
+                        <div id="par" class="game table-responsive tab-pane fade">
+                        <table  class="tabled table-bordered table-hover table"  id="bio_data">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">S.no,</th>
+                                    <th scope="col">Hall_ticket_no</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Branch</th>
+                                    <th scope="col">Year</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>19BD1A05AA</td>
+                                <td>NAME X</td>
+                                <td>CSE</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>19BD1A05AB</td>
+                                <td>NAME Y</td>
+                                <td>IT</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>19BD1A05AC</td>
+                                <td>NAME Z</td>
+                                <td>EIE </td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>19BD1A05AD</td>
+                                <td>NAMW@</td>
+                                <td>ECE</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>19BD1A05AE</td>
+                                <td>NAME</td>
+                                <td>EEE</td>
+                                <td>4</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <button onclick="insert_Row()">Create row</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+    <footer>
+        <div class="social-icons row">
+            <img src="./images/fb.png" alt="">
+            <img src="./images/tw.png" alt="">
+            <img src="./images/ig.png" alt="">
+        </div>
+    </footer>
+</html>
